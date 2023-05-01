@@ -1,0 +1,75 @@
+.friends_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+
+  gap: 50px;
+}
+
+.friends_list_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+
+  width: 100px;
+  height: 130px;
+
+  background-color: rgb(244, 244, 244);
+
+  transition: all linear 200ms;
+}
+
+.friends_list_item:hover,
+.friends_list_item:focus {
+  -webkit-box-shadow: 7px 9px 27px -3px rgba(158, 158, 158, 0.75);
+  -moz-box-shadow: 7px 9px 27px -3px rgba(158, 158, 158, 0.75);
+  box-shadow: 7px 9px 27px -3px rgba(158, 158, 158, 0.75);
+
+  cursor: pointer;
+
+  scale: 1.1;
+}
+
+.friends_list_item_avatar {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+
+  background-color: white;
+
+  z-index: 10;
+}
+
+.friends_list_item_text {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+.status {
+  font-size: 35px;
+
+  position: absolute;
+
+  bottom: 35px;
+
+  z-index: 20;
+}
+
+.status__online {
+  color: chartreuse;
+}
+.status__offline {
+  color: grey;
+}

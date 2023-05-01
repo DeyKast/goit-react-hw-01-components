@@ -1,0 +1,39 @@
+.statistics {
+  margin-top: 30px;
+  padding: 20px;
+
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid grey;
+
+  background-color: rgb(240, 255, 255);
+
+  -webkit-box-shadow: inset 0px -51px 32px -14px rgb(204, 255, 255);
+  -moz-box-shadow: inset 0px -51px 32px -14px rgb(204, 255, 255);
+  box-shadow: inset 0px -51px 32px -14px rgb(204, 255, 255);
+}
+
+.stat_list {
+  list-style: none;
+  padding: 0px;
+
+  display: flex;
+  gap: 30px;
+
+  border-top: 1px solid grey;
+
+  margin-bottom: 20px;
+  padding-top: 30px;
+}
+.item {
+  transition: all linear 200ms;
+}
+.item:hover,
+.item:focus {
+  font-weight: 700;
+}
