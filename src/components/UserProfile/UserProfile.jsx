@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './user.module.css';
 
-const profile = data => (
+const Profile = ({ data }) => (
   <div className={css.profile}>
     <div className={css.description}>
       <img src={data.avatar} alt="User avatar" className={css.avatar} />
@@ -27,7 +27,7 @@ const profile = data => (
   </div>
 );
 
-profile.propTypes = {
+Profile.propTypes = {
   data: PropTypes.shape({
     avatar: PropTypes.string,
     username: PropTypes.string,
@@ -41,4 +41,4 @@ profile.propTypes = {
   }).isRequired,
 };
 
-export default profile;
+export default Profile;

@@ -1,20 +1,22 @@
-import profile from './task1/task-1';
-import userData from './task1/user.json';
+import Profile from './UserProfile/UserProfile';
+import userData from '../data/user.json';
 
-import Statistics from './task2/task-2';
-import statisticsData from './task2/data.json';
+import Statistics from './UploadStats/UploadStats';
+import statisticsData from '../data/data.json';
 
-import Friends from './task3/task-3';
-import friendsData from './task3/friends.json';
+import Friends from './FriendsList/FriendList';
+import friendsData from '../data/friends.json';
 
-import Transactions from './task4/task-4';
-import TransactionsData from './task4/transactions.json';
+import Transactions from './TransactionsHistory/TransactionsHistory';
+import TransactionsData from '../data/transactions.json';
 
 export const App = () => {
   return (
     <section className="main-section">
       <h1>Profile</h1>
-      <div>{profile(userData)}</div>
+      <div>
+        <Profile data={userData} />
+      </div>
       <div>
         <Statistics title="Upload stats" stats={statisticsData} />
       </div>

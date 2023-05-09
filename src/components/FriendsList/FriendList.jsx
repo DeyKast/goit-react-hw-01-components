@@ -19,15 +19,13 @@ const Friends = props => {
             <div className={css.friends_list_item_text}>
               <p className="name">{name}</p>
 
-              {isOnline ? (
-                <span className={css.status + ' ' + css.status__online}>
-                  &#9679;
-                </span>
-              ) : (
-                <span className={css.status + ' ' + css.status__offline}>
-                  &#9679;
-                </span>
-              )}
+              <span
+                className={`${css.status} ${
+                  isOnline ? css.status__online : css.status__offline
+                }`}
+              >
+                &#9679;
+              </span>
             </div>
           </li>
         );
